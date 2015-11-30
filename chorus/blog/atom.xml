@@ -4,7 +4,7 @@
  <title>Chorus Console Blog</title>
  <link href="http://t.undra.org/chorus/blog/atom.xml" rel="self"/>
  <link href="http://t.undra.org/chorus/blog/"/>
- <updated>2015-11-30T13:57:57+01:00</updated>
+ <updated>2015-11-30T14:12:06+01:00</updated>
  <id>http://t.undra.org</id>
  <author>
    <name>Christian Plesner Hansen</name>
@@ -19,7 +19,7 @@
    <id>http://t.undra.org/chorus/blog/2015/11/30/a-new-terminal</id>
    <content type="html">
 
-Terminals have become better around the edges but the basic model hasn’t evolved for decades.
+I probably don’t have to spend too much time convincing you that terminals are a relic of the past. They have become better around the edges but the basic model hasn’t evolved for decades.
 
 Chorus is my take on a modern replacement.
 
