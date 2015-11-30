@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 title:               Chorus Console Blog
 description:         "A blog about Chorus, a new terminal."
 url:                 "http://t.undra.org"
-baseurl:             "/chorus/blog"
+# baseurl:             "/chorus/blog"
 paginate:            5
 paginate_path:       "/page/:num/"
 
