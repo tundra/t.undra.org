@@ -1,0 +1,22 @@
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink: pretty
+relative_permalinks: true
+markdown: kramdown
+excerpt_separator: <!--more-->
+
+# Setup
+title:               Chorus Console Blog
+description:         "A blog about Chorus, a new terminal."
+url:                 "http://t.undra.org"
+baseurl:             "/chorus/blog"
+paginate:            5
+paginate_path:       "/page/:num/"
+
+# About/contact
+author:
+  name:              Christian Plesner Hansen
+  url:               http://c7n.p5r.org
+  email:             plesner@t.undra.org
+
+# Custom vars
+version:             1.0.0
