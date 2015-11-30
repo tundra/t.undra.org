@@ -1,0 +1,44 @@
+.masthead-navigation {
+  font-family: sans-serif;
+  font-size: small;
+}
+
+@media (max-width: 48em) {
+  .masthead-navigation {
+    text-align: center;
+  }
+}
+
+.masthead-navigation-link {
+  color: #1d5884;
+}
+
+.post {
+  margin-bottom: 2em;
+}
+
+.avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  float: right;
+  margin-left: 10px;
+}
+
+.share-button-container {
+  margin-bottom: 4em;
+}
+
+.share-button {
+  float: left;
+  margin-left: 5px;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+/* MailChimp */
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px "PT Sans", Helvetica, Arial, sans-serif;
+}
