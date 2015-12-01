@@ -67,7 +67,7 @@
       
     
 
-    <a class="sidebar-nav-item" href="">GitHub</a>
+    <a class="sidebar-nav-item" href="http://github.com/tundra">GitHub</a>
   </nav>
 
   <div class="sidebar-item">
@@ -116,11 +116,11 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/chorus-draft/blog/2015/11/30/a-new-terminal/">
-        A New Terminal
+      <a href="/chorus-draft/blog/2015/12/01/chorus-a-new-kind-of-terminal/">
+        Chorus: A New Kind of Terminal
       </a>
     </h1>
-    <span class="post-date">30 Nov 2015</span>
+    <span class="post-date">01 Dec 2015</span>
     <!--
 Objective: this project is exciting, worth watching. There is a credible vision.
 
@@ -129,27 +129,31 @@ Don't belabor terminals being out of date, we know.
 Give a sense of the vision: examples of concrete improvements plus the sense that those are examples of a coherent underlying model.
 -->
 
-<p>I probably don’t have to spend too much time convincing you that terminals are a relic of the past. They have become better around the edges but the basic model hasn’t evolved for decades.</p>
+<p>If you’ve spent any amount of time in a terminal window you probably don’t need me to tell you that they’re a relic of the past. They have become better around the edges but the basic model hasn’t evolved for decades.</p>
 
 <p>Chorus is my take on a modern replacement.</p>
 
 <!--more-->
 
-<p>Creating a new terminal is tricky. The model we use today is, for all its shortcomings, still clean, simple, and powerful. Any new model needs to be enough of an improvement that it’s worth the effort to learn. At the same time, the current model is baked into everything: from the OS to existing programs and toolchains to even programming languages with their <code>puts</code>, <code>printf</code>, and friends. Compatibility is a major concern.</p>
+<p>Creating a new terminal is tricky. The model we use today is, for all its shortcomings, still clean, simple, and powerful. Any new model needs to be enough of an improvement that it’s worth the effort to learn. At the same time, the current model is baked into everything: from the OS to existing programs and toolchains to programming languages with their <code>puts</code>, <code>printf</code>, and friends. Compatibility is a major concern.</p>
 
-<p>The key feature of chorus’ model is that it is based on structured data, not flat text. The primary difference you will see as an interactive user is that programs will be able to interact with you not just through text but graphically. As a developer what you’ll see is that you can interact with other programs through well-defined structured APIs instead of flat byte streams.</p>
+<p>It’s not the main concern though. The current terminal model, flat text with control codes, is a dead end. Granted, it’s a dead end that’s probably going to outlive us all, but there just doesn’t seem to be a good way to move it forward. Chorus is going to support it – and actually make it easier to work with to some extent – but apart from that leave it alone.</p>
 
-<p>One example of the difference, one that should be familiar, is the difference between the terminal and browser console. They are similar but browser consoles have fewer restrictions. They have some of the features you would want in a terminal if they were possible. For instance, simple things like being able to interact with the values you log,</p>
+<p>Localizing the interaction with the legacy model to one component means that elsewhere you can use Chorus’ structured APIs without worrying about compatibility. You can if you want but if not the platform will deal with it.</p>
 
-<p><img src="/chorus-draft/blog/public/images/chrome-console-log-example.png" alt="Ex console.log example" /></p>
+<p>One example of what this means, one that should be familiar, is the difference between the classic terminal and browser console. They are similar but browser consoles don’t have to worry about compatibility. Consequently, they have some of the features you would want in a terminal too if only they were possible. For instance, being able to interact with the values you output,</p>
+
+<p><img src="/chorus-draft/blog/public/images/chrome-console-log-example.png" alt="Example of console.log in the chrome console" /></p>
 
 <p>Even something as simple as that is impossible in the terminal,</p>
 
-<p><img src="/chorus-draft/blog/public/images/irb-puts-example.png" alt="irb puts example" /></p>
+<p><img src="/chorus-draft/blog/public/images/irb-puts-example.png" alt="Example of puts in ruby on the terminal" /></p>
 
-<p>Creating a general and coherent new model requires touching everything: the terminal itself, the shell, how processes interact with the system, etc. This is a trivial example, the full model is much more general, but it gives a taste the potential of removing restrictions to the model.</p>
+<p>Creating a general and coherent new model requires touching everything: the terminal itself, the shell, how processes interact with the system, etc. This is a simple example, the full model is more general, but it gives a taste the potential of removing restrictions.</p>
 
-<p>It’s been my full time project since August 2013 so a little over two years. It’s not ready yet but it’s getting there.</p>
+<p>Chorus has been my full time project since August 2013 so a little over two years. It’s not ready yet but it’s getting there. I’ll go into more details about how the model works in future posts.</p>
+
+<p>I’m really interested in input from other people. If you have a particular use that you think a new terminal should definitely support or you have some other idea for how they could become better you should tell me. I’ve set up a mailing list for this very purpose, <code>chorus-discuss@googlegroups.com</code>. You can post to the group without being a member, just send an email to the address.</p>
 
 
   </div>
