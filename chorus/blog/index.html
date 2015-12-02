@@ -137,23 +137,42 @@ Give a sense of the vision: examples of concrete improvements plus the sense tha
 
 <p>Creating a new terminal is tricky. The model we use today is, for all its shortcomings, still clean, simple, and powerful. Any new model needs to be enough of an improvement that it’s worth the effort to learn. At the same time, the current model is baked into everything: from the OS to existing programs and toolchains to programming languages with their <code>puts</code>, <code>printf</code>, and friends. Compatibility is a major concern.</p>
 
-<p>It’s not the main concern though. The current terminal model, flat text with control codes, is a dead end. Granted, it’s a dead end that’s probably going to outlive us all, but there just doesn’t seem to be a good way to move it forward. Chorus is going to support it – and actually make it easier to work with to some extent – but apart from that leave it alone.</p>
+<p>It’s not, however, the main concern. The current terminal model, stdin/out/err, VT100, is a dead end. It’s a dead end that’s probably going to outlive us all but there just doesn’t seem to be a good way to move it forward. Chorus is going to support it – and actually make it easier to work with to some extent – but apart from that leave it alone.</p>
 
-<p>Localizing the interaction with the legacy model to one component means that elsewhere you can use Chorus’ structured APIs without worrying about compatibility. You can if you want but if not the platform will deal with it.</p>
+<p>Localizing the interaction with the legacy model to one component means that elsewhere you can use Chorus’ more high-level APIs without worrying about compatibility. You can if you want but if not the platform will deal with it.</p>
 
 <p>One example of what this means, one that should be familiar, is the difference between the classic terminal and browser console. They are similar but browser consoles don’t have to worry about compatibility. Consequently, they have some of the features you would want in a terminal too if only they were possible. For instance, being able to interact with the values you output,</p>
 
 <p><img src="/chorus/blog/public/images/chrome-console-log-example.png" alt="Example of console.log in the chrome console" /></p>
 
-<p>Even something as simple as that is impossible in the terminal,</p>
+<p>Even something as simple as that is not available in the terminal,</p>
 
 <p><img src="/chorus/blog/public/images/irb-puts-example.png" alt="Example of puts in ruby on the terminal" /></p>
 
 <p>Creating a general and coherent new model requires touching everything: the terminal itself, the shell, how processes interact with the system, etc. This is a simple example, the full model is more general, but it gives a taste the potential of removing restrictions.</p>
 
-<p>Chorus has been my full time project since August 2013 so a little over two years. It’s not ready yet but it’s getting there. I’ll go into more details about how the model works in future posts.</p>
+<p>Chorus has been my full time project since August 2013 so a little over two years. It’s not ready yet but it’s getting there. I’ll go into more detail about how the model works in future posts.</p>
 
-<p>I’m really interested in input from other people. If you have a particular use that you think a new terminal should definitely support or you have some other idea for how they could become better you should tell me. I’ve set up a mailing list for this very purpose, <code>chorus-discuss@googlegroups.com</code>. You can post to the group without being a member, just send an email to the address.</p>
+<p>I’m really interested in input from other people. If you have a particular use that you think a new terminal should support or you have an idea for how they could become better you should tell me. I’ve set up a mailing list for this very purpose, <code>chorus-discuss@googlegroups.com</code>. You can post to the group without being a member, just send an email to the address.</p>
+
+<p>If you’re curious about chorus you should totally sign up to get project updates, that way you’ll be the first to know when I’ve got news to share. You can do that right here:</p>
+
+<div>
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css" />
+<div id="mc_embed_signup">
+<form action="//p5r.us9.list-manage.com/subscribe/post?u=9183a91936157ce8f318a338e&amp;id=2cfcba5493" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+  <label for="mce-EMAIL">Subscribe to chorus project updates</label>
+  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" />
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9183a91936157ce8f318a338e_2cfcba5493" tabindex="-1" value="" /></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
+    </div>
+</form>
+</div>
+<!--End mc_embed_signup-->
+</div>
 
 
   </div>
@@ -193,4 +212,19 @@ Give a sense of the vision: examples of concrete improvements plus the sense tha
       })(document);
     </script>
   </body>
+
+  
+    <!-- Google analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-70916153-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+
+
 </html>
