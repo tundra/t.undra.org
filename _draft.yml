@@ -1,2 +1,3 @@
-title:               Chorus Console Blog (Draft)
-baseurl:             "/chorus-draft/blog"
+title: Chorus Console Blog (Draft)
+baseurl: "/chorus-draft/blog"
+mode: draft

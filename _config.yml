@@ -3,6 +3,7 @@ permalink: pretty
 relative_permalinks: true
 markdown: kramdown
 excerpt_separator: <!--more-->
+mode: public
 
 # Setup
 title: Chorus Console Blog
