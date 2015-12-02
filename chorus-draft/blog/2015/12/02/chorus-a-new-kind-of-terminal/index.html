@@ -11,24 +11,24 @@
 
   <title>
     
-      Chorus Console Blog &middot; 
+      Chorus: A New Kind of Terminal &middot; Chorus Console Blog (Draft)
     
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/chorus/blog/public/css/poole.css">
-  <link rel="stylesheet" href="/chorus/blog/public/css/syntax.css">
-  <link rel="stylesheet" href="/chorus/blog/public/css/lanyon.css">
-  <link rel="stylesheet" href="/chorus/blog/public/css/chorus.css">
+  <link rel="stylesheet" href="/chorus-draft/blog/public/css/poole.css">
+  <link rel="stylesheet" href="/chorus-draft/blog/public/css/syntax.css">
+  <link rel="stylesheet" href="/chorus-draft/blog/public/css/lanyon.css">
+  <link rel="stylesheet" href="/chorus-draft/blog/public/css/chorus.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="/chorus/blog/public/favicon.ico">
+  <link rel="shortcut icon" href="/chorus-draft/blog/public/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/chorus/blog/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/chorus-draft/blog/atom.xml">
 
-  <link rel="canonical" href="http://t.undra.org/chorus/blog/">
+  <link rel="canonical" href="http://t.undra.org/chorus-draft/blog/2015/12/02/chorus-a-new-kind-of-terminal/">
 
 </head>
 
@@ -46,7 +46,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="/chorus/blog/">Home</a>
+    <a class="sidebar-nav-item" href="/chorus-draft/blog/">Home</a>
 
     
     
@@ -60,7 +60,7 @@
     
       
         
-          <a class="sidebar-nav-item" href="/chorus/blog/about/">About</a>
+          <a class="sidebar-nav-item" href="/chorus-draft/blog/about/">About</a>
         
       
     
@@ -84,11 +84,11 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            Chorus Console Blog
+            Chorus Console Blog (Draft)
             <small></small>
           </h3>
             <div class="masthead-navigation">
-              <a href="/chorus/blog/" title="Home">Home</a>
+              <a href="/chorus-draft/blog/" title="Home">Home</a>
               
               
                 
@@ -101,7 +101,7 @@
               
                 
                   
-                    &middot; <a class="masthead-navigation-link" href="/chorus/blog/about/">About</a>
+                    &middot; <a class="masthead-navigation-link" href="/chorus-draft/blog/about/">About</a>
                   
                 
               
@@ -112,16 +112,10 @@
       </div>
 
       <div class="container content">
-        <div class="posts">
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/chorus/blog/2015/12/02/chorus-a-new-kind-of-terminal/">
-        Chorus: A New Kind of Terminal
-      </a>
-    </h1>
-    <span class="post-date">02 Dec 2015</span>
-    <!--
+        <div class="post">
+  <h1 class="post-title">Chorus: A New Kind of Terminal</h1>
+  <span class="post-date">02 Dec 2015</span>
+  <!--
 Objective: this project is exciting, worth watching. There is a credible vision.
 
 Don't belabor terminals being out of date, we know.
@@ -143,11 +137,11 @@ Give a sense of the vision: examples of concrete improvements plus the sense tha
 
 <p>One example of what this means, one that should be familiar, is the difference between the classic terminal and browser console. They are similar but browser consoles don’t have to worry about compatibility. Consequently, they have some of the features you would want in a terminal too if only they were possible. For instance, being able to interact with the values you output,</p>
 
-<p><img src="/chorus/blog/public/images/chrome-console-log-example.png" alt="Example of console.log in the chrome console" /></p>
+<p><img src="/chorus-draft/blog/public/images/chrome-console-log-example.png" alt="Example of console.log in the chrome console" /></p>
 
 <p>Even something as simple as that is impossible in the terminal,</p>
 
-<p><img src="/chorus/blog/public/images/irb-puts-example.png" alt="Example of puts in ruby on the terminal" /></p>
+<p><img src="/chorus-draft/blog/public/images/irb-puts-example.png" alt="Example of puts in ruby on the terminal" /></p>
 
 <p>Creating a general and coherent new model requires touching everything: the terminal itself, the shell, how processes interact with the system, etc. This is a simple example, the full model is more general, but it gives a taste the potential of removing restrictions.</p>
 
@@ -156,18 +150,74 @@ Give a sense of the vision: examples of concrete improvements plus the sense tha
 <p>I’m really interested in input from other people. If you have a particular use that you think a new terminal should definitely support or you have some other idea for how they could become better you should tell me. I’ve set up a mailing list for this very purpose, <code>chorus-discuss@googlegroups.com</code>. You can post to the group without being a member, just send an email to the address.</p>
 
 
-  </div>
-  
 </div>
 
-<div class="pagination">
-  
-    <span class="pagination-item older">Older</span>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
+<div class="share-button-container">
+
+  <!-- Twitter -->
+  <div class="share-button">
+    <a href="https://twitter.com/share" class="twitter-share-button"{count} data-dnt="true">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </div>
+
+  <!-- Facebook -->
+  <div class="share-button">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-share-button" data-layout="button_count"></div>
+  </div>
+
+  <!-- Reddit -->
+  <div class="share-button">
+    <script type="text/javascript">
+      reddit_target='programming';
+      reddit_newwindow='1';
+    </script>
+    <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
+  </div>
+
+  <!-- HN -->
+  <div class="share-button">
+    <a href="https://news.ycombinator.com/submit" class="hn-button" data-count="horizontal" data-style="twitter">Vote on Hacker News</a>
+    <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+  </div>
+
+  <!-- Pocket -->
+  <div class="share-button">
+    <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+    <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+  </div>
+
 </div>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//chorusconsoleblog.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 
       </div>

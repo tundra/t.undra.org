@@ -4,13 +4,27 @@
  <title>Chorus Console Blog</title>
  <link href="http://t.undra.org/chorus/blog/atom.xml" rel="self"/>
  <link href="http://t.undra.org/chorus/blog/"/>
- <updated>2015-12-01T11:49:55+01:00</updated>
+ <updated>2015-12-02T11:40:57+01:00</updated>
  <id>http://t.undra.org</id>
  <author>
    <name>Christian Plesner Hansen</name>
    <email>plesner@t.undra.org</email>
  </author>
 
+ 
+ <entry>
+   <title>Chorus: A New Kind of Terminal</title>
+   <link href="http://t.undra.org/2015/12/02/chorus-a-new-kind-of-terminal/"/>
+   <updated>2015-12-02T00:00:00+01:00</updated>
+   <id>http://t.undra.org/chorus/blog/2015/12/02/chorus-a-new-kind-of-terminal</id>
+   <content type="html">
+
+If you’ve spent any amount of time in a terminal window you probably don’t need me to tell you that they’re a relic of the past. They have become better around the edges but the basic model hasn’t evolved for decades.
+
+Chorus is my take on a modern replacement.
+
+</content>
+ </entry>
  
 
 </feed>
