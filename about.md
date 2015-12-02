@@ -11,7 +11,7 @@ Chorus is my project to create a replacement for the traditional terminal. This 
 
 Who am I? I'm Christian, a software engineer in Århus, Denmark. I have a [website](http://c7n.p5r.org/). I'm [@plesner](https://twitter.com/plesner) on twitter and [plesner](https://github.com/plesner) on GitHub. Before this project I worked a few different places, most recently google.
 
-If you're curious about chorus you should totally sign up to get project updates. You can do that right here:
+If you're curious about chorus you should totally sign up to get project updates, that way you'll be the first to know when I've got news to share. You can do that right here:
 
 <div>
 <!-- Begin MailChimp Signup Form -->
